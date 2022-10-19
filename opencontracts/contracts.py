@@ -13,7 +13,17 @@ class Contracts:
         pass
 
     def get_top_N_open_contracts(self, open_contracts, renegotiated_contracts, top_n):
-        """Returns a list of top-n Associate Ids ordered by mount owed to the institution"""
+        """Returns a list of top-n Associate Ids ordered by amount owed to the institution.
+
+        This method will first remove all renegotiated contracts and will create a new list called
+        open_contracts_list.
+
+        This list will then be ordered by debt value, from greatest to lower values.
+
+        After that, we will create a ranking by Associate Ids ordered by debt value (ordered_open_contracts_ranking)
+
+        This method will return the results (Associate Ids) as an ordered list by debt owed to the institution.
+        """
 
         open_contracts_list = self._remove_renegotiated_contracts(open_contracts, renegotiated_contracts)
         ordered_open_contracts = self._order_open_contract_list(open_contracts_list)

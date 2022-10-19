@@ -1,6 +1,6 @@
 # Open Contracts
 
-O projeto **Open Contracts** implementa classes e métodos para gerar uma lista com os maiores devedores que ainda 
+O projeto **Open Contracts** implementa classes e métodos para gerar uma lista ordenada com os maiores devedores que ainda 
 não possuem débitos renegociados com a instituição.
 
 # Instalação
