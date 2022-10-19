@@ -1,6 +1,7 @@
 import unittest
 from opencontracts.contracts import Contract, Contracts
 
+
 class TestOpenContracts(unittest.TestCase):
 
     def setUp(self):

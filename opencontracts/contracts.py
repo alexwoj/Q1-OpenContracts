@@ -78,4 +78,3 @@ class Contracts:
         """Returns the number of open contracts, removing renegotiated contracts"""
 
         return len(open_contracts) - len(renegotiated_contracts)
-

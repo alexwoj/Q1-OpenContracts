@@ -14,4 +14,3 @@ top_n = 3
 
 actual_open_contracts = contracts.get_top_N_open_contracts(contracts_ob_list, renegotiated, top_n)
 print(actual_open_contracts)
-
