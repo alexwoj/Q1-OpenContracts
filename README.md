@@ -5,9 +5,6 @@ não possuem débitos renegociados com a instituição.
 
 # Instalação
 
-O projeto encontra-se disponível em repositório privado no Github. É necessário solicitar acesso ao proprietário 
-do repositório.
-
 **Instruções para instalação:**
 
 - Clonar o repositório
