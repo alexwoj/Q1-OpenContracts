@@ -36,7 +36,7 @@ não possuem débitos renegociados com a instituição.
   
   - top_n: Um inteiro com a quantidade de devedores que deve ser retornado pelo método.
   
-  O método irá retornar uma lista contento os _top_n_ inteiros representando o ID do associado, ordenado do maior para
+  O método irá retornar uma lista contendo os _top_n_ inteiros representando o ID do associado, ordenado do maior para
   o menor de acordo com o valor em aberto com a instituição.
   
   
