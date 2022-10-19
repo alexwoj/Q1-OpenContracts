@@ -18,7 +18,6 @@ class TestOpenContracts(unittest.TestCase):
 
     def test_get_top_N_open_contracts(self):
 
-
         contracts = Contracts()
         top_n_actual_open_contracts = contracts.get_top_N_open_contracts(self.open_contracts, self.renegotiated,
                                                                          self.top_n)

@@ -18,12 +18,11 @@ class Contracts:
         open_contracts_list = self._remove_renegotiated_contracts(open_contracts, renegotiated_contracts)
         ordered_open_contracts = self._order_open_contract_list(open_contracts_list)
         ordered_open_contracts_ranking = self._create_open_contracts_ranking(ordered_open_contracts, top_n)
-
         return ordered_open_contracts_ranking
 
     def _remove_renegotiated_contracts(self, open_contracts_obj, renegotiated_contracts):
         """Removes renegotiated contracts from open_contracts_obj and returns a list containing the
-         Associate Id and Amount Owed to the institution"""
+         Associate Id and Debt"""
 
         open_contracts_list = []
         for contract in open_contracts_obj:
@@ -33,7 +32,7 @@ class Contracts:
         return open_contracts_list
 
     def _order_open_contract_list(self, open_contracts):
-        """Orders open contracts list by element [1] (owed value)"""
+        """Order open contracts list by element [1] (debt)"""
 
         return sorted(open_contracts, key=lambda x: x[1], reverse=True)
 
@@ -45,3 +44,4 @@ class Contracts:
             ordered_open_contracts_ranking.append(associate_id)
 
         return ordered_open_contracts_ranking
+
